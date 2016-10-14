@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/coldbrewcloud/coldbrew-core/components"
+	"github.com/coldbrewcloud/core/components"
 	"github.com/stretchr/testify/assert"
 )
 

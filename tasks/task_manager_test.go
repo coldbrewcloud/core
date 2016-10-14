@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coldbrewcloud/coldbrew-core/tasks"
+	"github.com/coldbrewcloud/core/tasks"
 	"github.com/stretchr/testify/assert"
 )
 
