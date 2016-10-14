@@ -1,11 +1,10 @@
 package tasks
 
 import (
+	"errors"
 	"fmt"
 	"sync"
 	"time"
-
-	"github.com/coldbrewcloud/coldbrew-core/errors"
 )
 
 type TaskManager struct {
@@ -17,10 +16,10 @@ type TaskManager struct {
 
 func (tm *TaskManager) Register(name string, task Task, config *TaskConfig) error {
 	if name == "" {
-		return errors.EmptyParamError("name")
+		return errors.New("name is empty")
 	}
 	if task == nil {
-		return errors.NilParamError("task")
+		return errors.New("task is nil")
 	}
 	if config == nil {
 		config = DefaultTaskConfig()

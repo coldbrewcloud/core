@@ -1,10 +1,9 @@
 package components
 
 import (
+	"errors"
 	"fmt"
 	"sync"
-
-	"github.com/coldbrewcloud/coldbrew-core/errors"
 )
 
 type namedComponent struct {
@@ -19,10 +18,10 @@ type ComponentManager struct {
 
 func (cm *ComponentManager) Register(name string, component Component) error {
 	if name == "" {
-		return errors.EmptyParamError("name")
+		return errors.New("name is empty")
 	}
 	if component == nil {
-		return errors.NilParamError("component")
+		return errors.New("component is nil")
 	}
 
 	cm.lock.Lock()
