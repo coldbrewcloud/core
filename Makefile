@@ -1,7 +1,5 @@
-VERSION := $(shell cat VERSION)
-
 deps:
-	glide -q install -s -u
+	glide -q install
 
 test: deps
 	go test `glide nv`

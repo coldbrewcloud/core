@@ -1,10 +1,18 @@
-hash: 210a0c2c1fbe215a34cedb856ed477123e52de6f8297fb7d5096b1a79093c8aa
-updated: 2016-10-13T22:35:58.334300194-07:00
+hash: 5d66610caa3278f6db9a8ad206a89890a6003c86132ade1160985bd1d06263bb
+updated: 2017-04-14T14:05:35.217167688-07:00
 imports:
-- name: github.com/dgrijalva/jwt-go
-  version: f0777076321ab64f6efc15a82d9d23b98539b943
 - name: github.com/op/go-logging
   version: 970db520ece77730c7e4724c61121037378659d9
 - name: github.com/stretchr/testify
   version: d77da356e56a7428ad25149ca77381849a6a5232
-devImports: []
+  subpackages:
+  - assert
+testImports:
+- name: github.com/davecgh/go-spew
+  version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
+  subpackages:
+  - difflib
