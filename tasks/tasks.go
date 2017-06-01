@@ -1,11 +1,18 @@
 package tasks
 
-var systemTasks TaskManager
+import "sync"
 
-func Register(name string, task Task, config *TaskConfig) error {
-	return systemTasks.Register(name, task, config)
+var DefaultManager *Manager
+var initDefaultManager sync.Once
+
+func Start(task Task) {
+	initDefaultManager.Do(func() {
+		DefaultManager = NewManager()
+	})
+
+	DefaultManager.Start(task)
 }
 
-func Close() error {
-	return systemTasks.Close()
+func StopAll() {
+	DefaultManager.StopAll()
 }

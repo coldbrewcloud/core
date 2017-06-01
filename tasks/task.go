@@ -1,3 +1,5 @@
 package tasks
 
-type Task func(param interface{}) error
+import "time"
+
+type Task func() (time.Duration, bool)

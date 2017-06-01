@@ -1,12 +1,8 @@
-hash: 5d66610caa3278f6db9a8ad206a89890a6003c86132ade1160985bd1d06263bb
-updated: 2017-04-14T14:05:35.217167688-07:00
+hash: 2b24df4a56a516695fabbc0a7ae9b842819a875b1a49fa7282650df3c0979d75
+updated: 2017-06-01T14:00:53.423738916-07:00
 imports:
 - name: github.com/op/go-logging
   version: 970db520ece77730c7e4724c61121037378659d9
-- name: github.com/stretchr/testify
-  version: d77da356e56a7428ad25149ca77381849a6a5232
-  subpackages:
-  - assert
 testImports:
 - name: github.com/davecgh/go-spew
   version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d
@@ -16,3 +12,7 @@ testImports:
   version: d8ed2627bdf02c080bf22230dbb337003b7aba2d
   subpackages:
   - difflib
+- name: github.com/stretchr/testify
+  version: d77da356e56a7428ad25149ca77381849a6a5232
+  subpackages:
+  - assert
