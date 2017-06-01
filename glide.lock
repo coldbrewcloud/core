@@ -1,8 +1,10 @@
-hash: 2b24df4a56a516695fabbc0a7ae9b842819a875b1a49fa7282650df3c0979d75
-updated: 2017-06-01T14:00:53.423738916-07:00
+hash: 97cfc7b9e0503b35950b718bc9734cdfb37b45eb66db380f066e439e2b05352a
+updated: 2017-06-01T14:10:35.429965489-07:00
 imports:
 - name: github.com/op/go-logging
   version: 970db520ece77730c7e4724c61121037378659d9
+- name: github.com/satori/go.uuid
+  version: 5bf94b69c6b68ee1b541973bb8e1144db23a194b
 testImports:
 - name: github.com/davecgh/go-spew
   version: 5215b55f46b2b919f50a1df0eaa5886afe4e3b3d

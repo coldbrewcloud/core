@@ -5,7 +5,7 @@ vet:
 	go vet `glide nv`
 
 test: deps vet
-	go test -race -cover -p 1 `glide nv`
+	go test -race -cover `glide nv`
 
 fmt:
 	go fmt `glide nv`
