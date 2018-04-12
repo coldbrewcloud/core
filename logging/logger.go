@@ -48,7 +48,3 @@ func (l *Logger) Warningf(format string, args ...interface{}) {
 func (l *Logger) Errorf(format string, args ...interface{}) {
 	l.logger.Errorf(format, args...)
 }
-
-func (l *Logger) Criticalf(format string, args ...interface{}) {
-	l.logger.Criticalf(format, args...)
-}

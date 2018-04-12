@@ -9,5 +9,4 @@ var (
 	INFO           = Level(_logging.INFO)
 	WARNING        = Level(_logging.WARNING)
 	ERROR          = Level(_logging.ERROR)
-	CRITICAL       = Level(_logging.CRITICAL)
 )

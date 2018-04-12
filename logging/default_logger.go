@@ -32,7 +32,3 @@ func Warningf(format string, args ...interface{}) {
 func Errorf(format string, args ...interface{}) {
 	defaultLogger.Errorf(format, args...)
 }
-
-func Criticalf(format string, args ...interface{}) {
-	defaultLogger.Criticalf(format, args...)
-}
